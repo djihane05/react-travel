@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-travel/static/css/main.88be3557.css",
+    "main.js": "/react-travel/static/js/main.711191cc.js",
+    "static/media/beachVid.mp4": "/react-travel/static/media/beachVid.22b241223c56efc88a70.mp4",
+    "static/media/keywest.jpg": "/react-travel/static/media/keywest.1e30514942c6f50bea09.jpg",
+    "static/media/maldives2.jpg": "/react-travel/static/media/maldives2.ee088b6ef17100d7f85f.jpg",
+    "static/media/borabora.jpg": "/react-travel/static/media/borabora.e6c4841f299365fdfa10.jpg",
+    "static/media/borabora2.jpg": "/react-travel/static/media/borabora2.726ded1de37915f83c71.jpg",
+    "static/media/maldives.jpg": "/react-travel/static/media/maldives.6912181c1b1fc6c5fa6f.jpg",
+    "static/media/maldives3.jpg": "/react-travel/static/media/maldives3.9c3058f9a039c5a102a8.jpg",
+    "index.html": "/react-travel/index.html",
+    "main.88be3557.css.map": "/react-travel/static/css/main.88be3557.css.map",
+    "main.711191cc.js.map": "/react-travel/static/js/main.711191cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88be3557.css",
+    "static/js/main.711191cc.js"
+  ]
+}

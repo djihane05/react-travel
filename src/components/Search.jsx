@@ -1,6 +1,7 @@
 import React from 'react';
 import { RiCustomerService2Full, RiCustomerService2Fill } from 'react-icons/ri';
 import { MdOutlineTravelExplore } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 const Search = () => {
   return (
@@ -9,15 +10,10 @@ const Search = () => {
         <div>
           <h2>LUXURY INCLUDED VACATIONS FOR TWO PEOPLE</h2>
           <p className='py-4'>
-            Come experience the very pinnacle of luxury Caribbean all-inclusive
-            vacations for couples at BEACHES Resorts. Our luxury beach resorts,
-            set along the most gorgeous tropical settings and exquisite beaches
-            in Saint Lucia, Jamaica, Antigua, The Bahamas, Grenada, Barbados and
-            Curaçao, feature unlimited gourmet dining, unique bars serving
-            premium liquors and wines, and every land and water sport, including
-            complimentary green fees at our golf resorts and certified scuba
-            diving at most resorts. If you are planning a wedding, BEACHES is
-            the leader in Caribbean destination weddings and honeymoon packages.
+
+Experience the ultimate in luxury with WANDERLUST, your guide to all-inclusive Caribbean vacations for couples and groups of friends. Our luxurious resorts, set in stunning tropical settings and on exquisite beaches in Saint Lucia, Jamaica, Antigua, The Bahamas, Grenada, Barbados, and Curaçao, offer an unparalleled experience. Enjoy unlimited gourmet dining, a full range of land and water sports, and breathtaking surroundings. Our resorts also include complimentary golf green fees and certified scuba diving at many locations.
+
+Whether you're planning a romantic getaway or a group adventure with friends, WANDERLUST is the leader in destination weddings, group vacations, and honeymoon packages in the Caribbean. We are dedicated to making every moment of your stay unforgettable with our exceptional service and attention to detail.
           </p>
         </div>
         <div className='grid sm:grid-cols-2 gap-8 py-4'>
@@ -46,7 +42,7 @@ const Search = () => {
           <div className='border text-center'>
               <p className='pt-2'>GET AN ADDITIONAL 10% OFF</p>
               <p className='py-4'>12 HOURS LEFT</p>
-              <p className='bg-gray-800 text-gray-200 py-2'>BOOK NOW AND SAVE</p>
+              <p className='bg-blue-800 text-gray-200 py-2'>BOOK NOW AND SAVE</p>
           </div>
           <form className='w-full'>
               <div className='flex flex-col my-2'>

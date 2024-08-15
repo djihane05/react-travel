@@ -10,6 +10,7 @@ import {
   FaPinterest,
   FaYoutube,
 } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -22,12 +23,16 @@ const Navbar = () => {
   return (
     <div className='flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white'>
       <div>
-        <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>BEACHES.</h1>
+        <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>WANDERLUST.</h1>
       </div>
       <ul className='hidden md:flex'>
         <li>Home</li>
-        <li>Destinations</li>
-        <li>Travel</li>
+        <li><Link to='destinations' smooth={true} duration={500}>
+           Destinations
+          </Link></li>
+        <li><Link to='Search' smooth={true} duration={500}>
+        Travel
+          </Link></li>
         <li>View</li>
         <li>Book</li>
       </ul>
@@ -44,7 +49,7 @@ const Navbar = () => {
       {/* Mobile menu dropdown */}
       <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
         <ul>
-          <h1>BEACHES.</h1>
+          <h1>WANDERLUST.</h1>
           <li className='border-b'>Home</li>
           <li className='border-b'>Destinations</li>
           <li className='border-b'>Travel</li>

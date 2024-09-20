@@ -13,20 +13,21 @@ const sliderData = [
   },
 ];
 
-const Carousel = () => {
+const Book = () => {
   const [slide, setSlide] = useState(0);
   const length = sliderData.length;
-  // console.log(length)
+
 
   const prevSlide = () => {
-    setSlide(slide === length - 1 ? 0 : slide + 1);
+  
+    setSlide(slide === 0 ? length - 1 : slide - 1);
   };
   const nextSlide = () => {
-    setSlide(slide === 0 ? length - 1 : slide - 1);
+    setSlide(slide === length - 1 ? 0 : slide + 1);
   };
 
   return (
-    <div className='max-w-[1240px] mx-auto px-4 py-16 relative flex justify-center itmes-center'>
+    <div name="book" className='max-w-[1240px] mx-auto px-4 py-16 relative flex justify-center itmes-center'>
       <BsArrowLeftSquareFill
         onClick={prevSlide}
         className='absolute top-[50%] text-3xl text-white cursor-pointer left-8'
@@ -46,4 +47,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Book;

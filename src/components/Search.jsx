@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Search = () => {
   return (
-    <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16'>
+    <div name="search" className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16'>
       <div className='lg:col-span-2 flex flex-col justify-evenly'>
         <div>
           <h2>LUXURY INCLUDED VACATIONS FOR TWO PEOPLE</h2>
@@ -62,7 +62,8 @@ Whether you're planning a romantic getaway or a group adventure with friends, WA
                   <label>Check-Out</label>
                   <input className='border rounded-md p-2' type="date" />
               </div>
-                <button className='w-full my-4'>Rates & Availabilities</button>
+                <button className='w-full my-4 bg-black h-[50px]  flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#03803d] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]">
+  Button'>Rates & Availabilities</button>
           </form>
       </div>
     </div>

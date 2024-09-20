@@ -5,11 +5,12 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import {
   FaFacebook,
-  FaTwitter,
+
   FaInstagram,
   FaPinterest,
   FaYoutube,
 } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -26,15 +27,21 @@ const Navbar = () => {
         <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>WANDERLUST.</h1>
       </div>
       <ul className='hidden md:flex'>
-        <li>Home</li>
+        <li><Link to='home' smooth={true} duration={500}>
+           Home
+          </Link></li>
         <li><Link to='destinations' smooth={true} duration={500}>
            Destinations
           </Link></li>
-        <li><Link to='Search' smooth={true} duration={500}>
+        <li><Link to='search' smooth={true} duration={500}>
         Travel
           </Link></li>
-        <li>View</li>
-        <li>Book</li>
+        <li><Link to='selects' smooth={true} duration={500}>
+        View
+          </Link></li>
+         <li><Link to='book' smooth={true} duration={500}>
+        Book
+          </Link></li>
       </ul>
       <div className='hidden md:flex'>
         <BiSearch className='' size={20} />
@@ -46,25 +53,36 @@ const Navbar = () => {
         {nav ? <AiOutlineClose className='text-black' size={20} /> : <HiOutlineMenuAlt4 size={20} />}
       </div>
 
-      {/* Mobile menu dropdown */}
+      {/* Mobile menu  */}
       <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
         <ul>
           <h1>WANDERLUST.</h1>
-          <li className='border-b'>Home</li>
-          <li className='border-b'>Destinations</li>
-          <li className='border-b'>Travel</li>
-          <li className='border-b'>View</li>
-          <li className='border-b'>Book</li>
+          <li   onClick={handleNav} className='border-b'><Link to='home' smooth={true} duration={500}>
+           Home
+          </Link></li>
+          <li  onClick={handleNav} className='border-b'>
+          {' '} <Link to='destinations' smooth={true} duration={500}>
+           Destinations
+          </Link></li>
+          <li  onClick={handleNav} className='border-b'>{' '} <Link to='search' smooth={true} duration={500}>
+           Travel
+          </Link></li>
+          <li  onClick={handleNav} className='border-b'><Link to='selects' smooth={true} duration={500}>
+        View
+          </Link></li>
+          <li  onClick={handleNav} className='border-b'><Link to='book' smooth={true} duration={500}>
+        Book
+          </Link></li>
           <div className='flex flex-col'>
             <button className='my-6'>Search</button>
-            <button>Account</button>
+            <button >Account</button>
           </div>
           <div className='flex justify-between my-6'>
-            <FaFacebook className='icon' />
-            <FaTwitter className='icon' />
-            <FaYoutube className='icon' />
-            <FaPinterest className='icon' />
-            <FaInstagram className='icon' />
+            <FaFacebook className='icon  hover:scale-105 hover:text-blue-700' />
+            < FaXTwitter  className='icon hover:scale-105 hover:text-black' />
+            <FaYoutube className='icon hover:scale-105 hover:text-red-600' />
+            <FaPinterest className='icon hover:scale-105 hover:text-red-600'/>
+            <FaInstagram className='icon hover:scale-105 hover:text-pink-700' />
           </div>
         </ul>
       </div>
